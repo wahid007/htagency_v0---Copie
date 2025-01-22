@@ -124,7 +124,7 @@ export default function Home() {
             <div className="flex flex-col items-center space-y-4 text-center">
               <div className="space-y-2">
                 <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl/none bg-gradient-to-r from-yellow-400 to-white bg-clip-text text-transparent">
-                  Transformez Votre Entreprise avec l'IA et l'IT
+                  Transformez Votre Entreprise avec l&apos;IA et l&apos;IT
                 </h1>
                 <p className="mx-auto max-w-[700px] text-gray-300 md:text-xl">
                   HTagency vous accompagne dans votre transformation numérique avec des solutions sur mesure en IA et
@@ -159,7 +159,7 @@ export default function Home() {
                     </h3>
                   </div>
                   <p className="text-gray-300">
-                    Optimisez vos processus avec nos solutions d'intelligence artificielle avancées.
+                    Optimisez vos processus avec nos solutions d&apos;intelligence artificielle avancées.
                   </p>
                 </CardContent>
               </Card>
@@ -189,7 +189,7 @@ export default function Home() {
                     </h3>
                   </div>
                   <p className="text-gray-300">
-                    Bénéficiez de conseils d'experts pour aligner votre technologie sur vos objectifs commerciaux.
+                    Bénéficiez de conseils d&apos;experts pour aligner votre technologie sur vos objectifs commerciaux.
                   </p>
                 </CardContent>
               </Card>
@@ -204,10 +204,10 @@ export default function Home() {
                   À Propos de Nous
                 </h2>
                 <p className="text-gray-300 md:text-xl">
-                  HTagency est une agence leader dans le domaine de l'IA et de l'IT. Nous sommes passionnés par
-                  l'innovation et déterminés à aider nos clients à réussir leur transformation numérique. Avec notre
+                  HTagency est une agence leader dans le domaine de l&apos;IA et de l&apos;IT. Nous sommes passionnés par
+                  l&apos;innovation et déterminés à aider nos clients à réussir leur transformation numérique. Avec notre
                   expertise de pointe et notre approche personnalisée, nous créons des solutions qui propulsent les
-                  entreprises vers l'avenir.
+                  entreprises vers l&apos;avenir.
                 </p>
               </div>
               <div className="aspect-video relative rounded-lg overflow-hidden">
@@ -231,8 +231,8 @@ export default function Home() {
               <Card className="bg-gray-800 overflow-hidden relative before:absolute before:inset-0 before:p-[1px] before:bg-gradient-to-r before:from-yellow-400 before:to-white before:-z-10 before:rounded-lg">
                 <CardContent className="p-5">
                   <p className="italic mb-4 text-gray-200">
-                    "HTagency a révolutionné notre approche de l'IA. Leur expertise a considérablement amélioré notre
-                    efficacité."
+                    &quot;HTagency a révolutionné notre approche de l&apos;IA. Leur expertise a considérablement amélioré notre
+                    efficacité.&quot;
                   </p>
                   <p className="font-bold text-gray-100">Marie Dubois, CEO de TechFrance</p>
                 </CardContent>
@@ -240,10 +240,10 @@ export default function Home() {
               <Card className="bg-gray-800 overflow-hidden relative before:absolute before:inset-0 before:p-[1px] before:bg-gradient-to-r before:from-yellow-400 before:to-white before:-z-10 before:rounded-lg">
                 <CardContent className="p-5">
                   <p className="italic mb-4 text-gray-200">
-                    "Leur équipe IT a développé une solution parfaitement adaptée à nos besoins. Un vrai partenariat
-                    gagnant."
+                    &quot;Leur équipe IT a développé une solution parfaitement adaptée à nos besoins. Un vrai partenariat
+                    gagnant.&quot;
                   </p>
-                  <p className="font-bold text-gray-100">Pierre Martin, CTO d'InnovCorp</p>
+                  <p className="font-bold text-gray-100">Pierre Martin, CTO d&apos;InnovCorp</p>
                 </CardContent>
               </Card>
             </div>
@@ -257,12 +257,12 @@ export default function Home() {
             <Accordion type="single" collapsible className="w-full max-w-3xl mx-auto">
               <AccordionItem value="item-1">
                 <AccordionTrigger className="text-left">
-                  Qu'est-ce que l'IA et comment peut-elle bénéficier à mon entreprise ?
+                  Qu&apos;est-ce que l&apos;IA et comment peut-elle bénéficier à mon entreprise ?
                 </AccordionTrigger>
                 <AccordionContent>
-                  L'Intelligence Artificielle (IA) est un domaine de l'informatique qui vise à créer des machines
-                  capables d'effectuer des tâches qui nécessiteraient normalement l'intelligence humaine. Pour votre
-                  entreprise, l'IA peut automatiser des processus, analyser de grandes quantités de données pour obtenir
+                  L&apos;Intelligence Artificielle (IA) est un domaine de l&apos;informatique qui vise à créer des machines
+                  capables d&apos;effectuer des tâches qui nécessiteraient normalement l&apos;intelligence humaine. Pour votre
+                  entreprise, l&apos;IA peut automatiser des processus, analyser de grandes quantités de données pour obtenir
                   des insights précieux, améliorer le service client avec des chatbots, et bien plus encore. Cela peut
                   se traduire par une efficacité accrue, une réduction des coûts et une meilleure prise de décision.
                 </AccordionContent>
@@ -273,9 +273,9 @@ export default function Home() {
                 </AccordionTrigger>
                 <AccordionContent>
                   Chez HTagency, la sécurité des données est notre priorité absolue. Nous utilisons des protocoles de
-                  cryptage avancés, des pare-feu robustes et des systèmes de détection d'intrusion pour protéger les
+                  cryptage avancés, des pare-feu robustes et des systèmes de détection d&apos;intrusion pour protéger les
                   données de nos clients. Nous effectuons régulièrement des audits de sécurité et nous nous conformons
-                  aux normes de l'industrie telles que GDPR et ISO 27001. De plus, nous formons continuellement notre
+                  aux normes de l&apos;industrie telles que GDPR et ISO 27001. De plus, nous formons continuellement notre
                   personnel aux meilleures pratiques en matière de sécurité des données.
                 </AccordionContent>
               </AccordionItem>
@@ -284,11 +284,11 @@ export default function Home() {
                   Combien de temps faut-il pour mettre en œuvre une solution IA ou IT dans mon entreprise ?
                 </AccordionTrigger>
                 <AccordionContent>
-                  Le temps de mise en œuvre d'une solution IA ou IT varie en fonction de la complexité du projet et de
-                  l'état actuel de votre infrastructure technologique. Généralement, cela peut prendre de quelques
+                  Le temps de mise en œuvre d&apos;une solution IA ou IT varie en fonction de la complexité du projet et de
+                  l&apos;état actuel de votre infrastructure technologique. Généralement, cela peut prendre de quelques
                   semaines à plusieurs mois. Chez HTagency, nous commençons par une évaluation approfondie de vos
                   besoins et de votre environnement existant. Ensuite, nous élaborons un plan de projet détaillé avec
-                  des étapes claires et des délais réalistes. Notre approche agile nous permet d'être flexibles et de
+                  des étapes claires et des délais réalistes. Notre approche agile nous permet d&apos;être flexibles et de
                   vous livrer des résultats tangibles à chaque étape du processus.
                 </AccordionContent>
               </AccordionItem>
@@ -297,9 +297,9 @@ export default function Home() {
                   Quels sont les coûts associés aux services de HTagency ?
                 </AccordionTrigger>
                 <AccordionContent>
-                  Les coûts de nos services varient en fonction de la nature et de l'ampleur du projet. Nous proposons
+                  Les coûts de nos services varient en fonction de la nature et de l&apos;ampleur du projet. Nous proposons
                   des solutions personnalisées adaptées aux besoins spécifiques de chaque client, ce qui signifie que
-                  les prix peuvent varier considérablement. Cependant, nous nous efforçons toujours d'offrir un
+                  les prix peuvent varier considérablement. Cependant, nous nous efforçons toujours d&apos;offrir un
                   excellent rapport qualité-prix. Nous commençons par une consultation gratuite pour comprendre vos
                   besoins, après quoi nous vous fournissons un devis détaillé. Nous proposons également des options de
                   tarification flexibles, y compris des modèles basés sur des projets ou des contrats de service à long
