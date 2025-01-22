@@ -9,6 +9,60 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 import Link from "next/link"
 import { Menu, X, LinkedinIcon, YoutubeIcon, Zap, Brain, Code, LineChart } from "lucide-react"
 import Image from "next/image"
+import { useForm, ValidationError } from '@formspree/react';
+
+const ContactSection = () => {
+  const [state, handleSubmit] = useForm("mzzznqan"); // Make sure this is your actual form ID from Formspree
+
+  if (state.succeeded) {
+    return (
+      <div className="max-w-md mx-auto text-center">
+        <h3 className="text-2xl font-bold text-yellow-400 mb-4">Merci pour votre message!</h3>
+        <p className="text-gray-300">Nous vous répondrons bientôt.</p>
+      </div>
+    );
+  }
+
+  return (
+    <form onSubmit={handleSubmit} className="max-w-md mx-auto space-y-4">
+      <Input
+        type="text"
+        placeholder="Nom"
+        name="name"
+        required
+        className="bg-gray-800 border-gray-600 text-gray-300 rounded-full"
+      />
+      <Input
+        type="email"
+        placeholder="Email"
+        name="email"
+        required
+        className="bg-gray-800 border-gray-600 text-gray-300 rounded-full"
+      />
+      <ValidationError prefix="Email" field="email" errors={state.errors} className="text-red-400 text-sm" />
+      <Input
+        type="tel"
+        placeholder="Téléphone"
+        name="phone"
+        className="bg-gray-800 border-gray-600 text-gray-300 rounded-full"
+      />
+      <Textarea
+        placeholder="Votre message"
+        name="message"
+        required
+        className="bg-gray-800 border-gray-600 text-gray-300 rounded-2xl"
+      />
+      <ValidationError prefix="Message" field="message" errors={state.errors} className="text-red-400 text-sm" />
+      <Button
+        type="submit"
+        disabled={state.submitting}
+        className="w-full bg-gradient-to-r from-yellow-400 to-white text-gray-900 font-bold hover:from-yellow-500 hover:to-gray-100 rounded-full"
+      >
+        {state.submitting ? 'Envoi en cours...' : 'Envoyer'}
+      </Button>
+    </form>
+  );
+};
 
 export default function Home() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
@@ -58,10 +112,12 @@ export default function Home() {
       )}
       <main className="flex-1">
         <section className="w-full py-12 md:py-24 lg:py-32 xl:py-48 bg-black relative overflow-hidden">
-          <div className="absolute inset-0 grid grid-cols-[repeat(auto-fill,minmax(20px,1fr))] grid-rows-[repeat(auto-fill,minmax(20px,1fr))]">
-            {[...Array(1000)].map((_, i) => (
-              <div key={i} className="border-t border-l border-gray-800"></div>
-            ))}
+          <div className="absolute inset-0">
+            <div className="w-full h-full grid grid-cols-[repeat(50,minmax(0,1fr))] grid-rows-[repeat(50,minmax(0,1fr))]">
+              {[...Array(2500)].map((_, i) => (
+                <div key={i} className="border-t border-l border-gray-800"></div>
+              ))}
+            </div>
           </div>
           <div className="absolute inset-0 bg-gradient-to-br from-yellow-400/40 to-black"></div>
           <div className="container px-4 md:px-6 relative z-10">
@@ -258,36 +314,7 @@ export default function Home() {
             <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-center mb-8 bg-gradient-to-r from-yellow-400 to-white bg-clip-text text-transparent">
               Contactez-nous
             </h2>
-            <form className="max-w-md mx-auto space-y-4">
-              <Input
-                type="text"
-                placeholder="Nom"
-                required
-                className="bg-gray-800 border-gray-600 text-gray-300 rounded-full"
-              />
-              <Input
-                type="email"
-                placeholder="Email"
-                required
-                className="bg-gray-800 border-gray-600 text-gray-300 rounded-full"
-              />
-              <Input
-                type="tel"
-                placeholder="Téléphone"
-                className="bg-gray-800 border-gray-600 text-gray-300 rounded-full"
-              />
-              <Textarea
-                placeholder="Votre message"
-                required
-                className="bg-gray-800 border-gray-600 text-gray-300 rounded-2xl"
-              />
-              <Button
-                type="submit"
-                className="w-full bg-gradient-to-r from-yellow-400 to-white text-gray-900 font-bold hover:from-yellow-500 hover:to-gray-100 rounded-full"
-              >
-                Envoyer
-              </Button>
-            </form>
+            <ContactSection />
           </div>
         </section>
       </main>
